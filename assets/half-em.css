@@ -1,0 +1,8 @@
+@font-face {
+  font-family: __half-em__;
+  src: url(./half-em.woff2) format('woff2'),
+       url(./half-em.woff) format('woff'),
+       url(./half-em.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

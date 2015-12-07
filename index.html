@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>State of Web Type</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./node_modules/mocha/mocha.css">
+    <link rel="stylesheet" href="./assets/opentype-features.css">
+    <link rel="stylesheet" href="./assets/em.css">
+    <link rel="stylesheet" href="./assets/half-em.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="./node_modules/promis/promise.js"></script>
+    <script src="./node_modules/mocha/mocha.js"></script>
+    <script src="./node_modules/unexpected/unexpected.js"></script>
+    <script src="./node_modules/fontfaceobserver/fontfaceobserver.js"></script>
+    <script src="./src/prefixfree.js"></script>
+    <script src="./src/ruler.js"></script>
+    <script>
+      mocha.ui('bdd');
+      expect = weknowhow.expect;
+    </script>
+    <script src="./test/helpers.js"></script>
+    <script src="./test/opentype-features-test.js"></script>
+    <script src="./test/font-feature-settings-test.js"></script>
+    <script src="./test/font-variant-ligatures-test.js"></script>
+    <script src="./test/font-size-adjust-test.js"></script>
+    <script src="./test/font-synthesis-test.js"></script>
+    <script src="./test/font-stretch-test.js"></script>
+    <script src="./test/font-shorthand-test.js"></script>
+    <script>
+      window.onload = function () {
+        mocha.run();
+      };
+    </script>
+  </body>
+</html>

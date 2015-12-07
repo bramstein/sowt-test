@@ -1,0 +1,8 @@
+@font-face {
+  font-family: __opentype-features__;
+  src: url(./opentype-features.woff2) format('woff2'),
+       url(./opentype-features.woff) format('woff'),
+       url(./opentype-features.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

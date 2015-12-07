@@ -1,0 +1,13 @@
+{
+  "name": "sowt-test",
+  "version": "1.0.0",
+  "description": "Browser tests for State of Web Type",
+  "dependencies": {
+    "fontfaceobserver": "^1.4.5",
+    "promis": "^1.0.1",
+    "unexpected": "^5.9.1",
+    "mocha": "^2.1.0"
+  },
+  "author": "Bram Stein <https://bramstein.com> (b.l.stein@gmail.com)",
+  "license": "BSD"
+}
