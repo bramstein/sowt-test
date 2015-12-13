@@ -40,7 +40,17 @@ var OPENTYPE_FEATURES = {
   'rlig': 450,
   'hlig': 460,
   'clig': 470,
-  'locl': 480
+  'locl': 480,
+  'hist': 490,
+  'c2pc': 500,
+  'pcap': 510,
+  'unic': 520,
+  'titl': 530,
+  'afrc': 540,
+  'zero': 550,
+  'cswh': 560,
+  'ornm': 570,
+  'nalt': 580
 };
 
 function getTestString(feature) {
@@ -52,6 +62,8 @@ function getTestString(feature) {
     return 'd';
   } else if (feature === 'clig') {
     return 'e';
+  } else if (feature === 'c2sc' || feature === 'c2pc') {
+    return 'f';
   } else {
     return 'a';
   }
@@ -70,7 +82,7 @@ expect.addAssertion('string', '[not] to enable opentype feature', function (expe
   var property = PrefixFree.prefixProperty(subject),
       ruler = new Ruler(getTestString(cmp));
 
-  ruler.style('font: 1000px ' + OPENTYPE_FEATURE_FONT_FAMILY + ';' + property + ';' + subject + ';');
+  ruler.style('font: 1000px "' + OPENTYPE_FEATURE_FONT_FAMILY + '";' + property + ';' + subject + ';');
 
   if (cmp === 'locl') {
     ruler.lang('fr');

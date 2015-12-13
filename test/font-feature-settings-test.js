@@ -8,10 +8,10 @@ describe('font-feature-settings', function () {
            'to be true');
   });
 
-  it('enables OpenType features with an index, a keyword, or the a standalone feature tag', function () {
-     expect('font-feature-settings: "liga"', 'to enable opentype feature', 'liga');
-     expect('font-feature-settings: "liga" on', 'to enable opentype feature', 'liga');
-     expect('font-feature-settings: "liga" 1', 'to enable opentype feature', 'liga');
+  it('enables OpenType features with an index, a keyword, or a standalone feature tag', function () {
+     expect('font-feature-settings: "dlig"', 'to enable opentype feature', 'dlig');
+     expect('font-feature-settings: "dlig" on', 'to enable opentype feature', 'dlig');
+     expect('font-feature-settings: "dlig" 1', 'to enable opentype feature', 'dlig');
   });
 
   it('disables OpenType features with an index or keyword', function () {

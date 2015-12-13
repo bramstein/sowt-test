@@ -6,3 +6,44 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-feature-values __opentype-features__ {
+  @swash {
+    fv-swsh: 1;
+  }
+
+  @stylistic {
+    fv-salt: 1;
+  }
+
+  @styleset {
+    fv-ss01: 1;
+    fv-ss02: 2;
+    fv-ss03: 3;
+    fv-ss04: 4;
+    fv-ss05: 5;
+    fv-ss06: 6;
+    fv-ss07: 7;
+    fv-ss08: 8;
+    fv-ss09: 9;
+    fv-ss10: 10;
+    fv-ss11: 11;
+    fv-ss12: 12;
+    fv-ss13: 13;
+    fv-ss14: 14;
+    fv-ss15: 15;
+    fv-ss16: 16;
+    fv-ss17: 17;
+    fv-ss18: 18;
+    fv-ss19: 19;
+    fv-ss20: 20;
+  }
+
+  @ornaments {
+    fv-ornm: 1;
+  }
+
+  @annotation {
+    fv-nalt: 1;
+  }
+}

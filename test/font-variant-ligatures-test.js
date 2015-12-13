@@ -42,11 +42,11 @@ describe('font-variant-ligatures', function () {
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'liga');
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'calt');
 
-    // "rlig" is not affected by "none"
+    // "rlig" and "locl"  are not affected by "none"
     expect('font-variant-ligatures: none', 'to enable opentype feature', 'rlig');
+    expect('font-variant-ligatures: none', 'to enable opentype feature', 'locl');
 
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'clig');
-    expect('font-variant-ligatures: none', 'not to enable opentype feature', 'locl');
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'ccmp');
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'mark');
     expect('font-variant-ligatures: none', 'not to enable opentype feature', 'mkmk');
